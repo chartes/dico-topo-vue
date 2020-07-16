@@ -16,7 +16,7 @@
     "leaflet": "^1.6.0",
     "leaflet.heat": "^0.2.0",
     "leaflet.markercluster": "^1.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mirador": "^3.0.0-alpha.16",
     "vue": "^2.6.10",
     "vue-class-component": "^7.1.0",
