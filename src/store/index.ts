@@ -8,8 +8,6 @@ import { searchParameters } from '@/store/searchParameters'
 import { commune } from '@/store/commune/index'
 import { bibls } from '@/store/bibls/index'
 
-const debug = process.env.NODE_ENV !== 'production'
-
 Vue.use(Vuex)
 
 const store: StoreOptions<RootState> = {

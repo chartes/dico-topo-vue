@@ -9,8 +9,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import { mapState, mapGetters, mapActions } from 'vuex'
 import CustomFooter from './ui/CustomFooter'
 import MainToolbar from './ui/MainToolbar'
 

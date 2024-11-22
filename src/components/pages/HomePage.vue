@@ -53,8 +53,7 @@
 </template>
 
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex'
-import Vue from 'vue'
+import { mapState, mapActions } from 'vuex'
 
 import PlaceSearchTable from '../PlaceSearchTable'
 import MainToolbar from '../ui/MainToolbar'
@@ -67,7 +66,7 @@ export default {
     MyAwesomeMap: () => import(/* webpackChunkName: "map-component" */ '../MyAwesomeMap'),
     PlaceCard: () => import(/* webpackChunkName: "card-component" */ '../PlaceCard')
   },
-  beforeRouteEnter: (to, from, next) => {
+  beforeRouteEnter: (_to, from, next) => {
     next(vm => {
       // access to component instance via `vm`
       // console.log('BEFORE@', from, vm.selectedItem)

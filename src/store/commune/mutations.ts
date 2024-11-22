@@ -1,7 +1,6 @@
 import { MutationTree } from 'vuex'
-import Vue from 'vue'
 
-import { CommuneState, InseeRefObject } from '@/store/commune/types'
+import { CommuneState } from '@/store/commune/types'
 export function getDefaultState (): CommuneState {
   return {
     commune: {},

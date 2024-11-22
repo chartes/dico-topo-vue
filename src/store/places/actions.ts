@@ -7,7 +7,7 @@ function makeUrl (query: String, rangeParam: String, sort: String, pageSize: Str
   return `/search?query=${query}${rangeParam}${sort}${pageSize}${pageNumber}`
 }
 
-function makeAggUrl (query: String, rangeParam: String, groupby: String, sort: String, pageSize: String, pageAfter: String) {
+function makeAggUrl (query: String, rangeParam: String, _groupby: String, sort: String, pageSize: String, pageAfter: String) {
   const agg = '&groupby[doc-type]=place&groupby[field]=place-id'
   const after = pageAfter ? `&page[after]=${pageAfter}` : ''
 
@@ -38,10 +38,10 @@ function makeTimeFilterUpperBoundary (query: String) {
 }
 
 export const actions: ActionTree<PlaceState, RootState> = {
-  selectPlace ({ commit, state, rootState }, place): any {
+  selectPlace ({ commit }, place): any {
     commit('selectItem', place)
   },
-  unselectPlace ({ commit, state, rootState }): any {
+  unselectPlace ({ commit }): any {
     commit('unselectItem')
   },
   clearAll ({ commit }, meta) {
@@ -50,13 +50,13 @@ export const actions: ActionTree<PlaceState, RootState> = {
       meta: { totalCount: 0, ...meta }
     })
   },
-  selectPreviousAggPage ({ commit, state, rootState }) {
+  selectPreviousAggPage ({ commit }) {
     commit('popAfterHistory')
   },
-  recordCurrentAggPage ({ commit, state, rootState }, after) {
+  recordCurrentAggPage ({ commit }) {
     commit('pushAfterHistory')
   },
-  async fetchUniqueLists ({ commit, rootState }, { query }) {
+  async fetchUniqueLists ({ commit }, { query }) {
     commit('setLoading', true)
     try {
       /* generate the departement list to use for filtering operations */
@@ -87,7 +87,7 @@ export const actions: ActionTree<PlaceState, RootState> = {
       commit('setLoading', false)
     }
   },
-  async searchPlace ({ commit, rootState }, { query, filterParam, rangeParam, groupbyPlace, sortParam, pageSize, pageNumber, after }) {
+  async searchPlace ({ commit }, { query, filterParam, rangeParam, groupbyPlace, sortParam, pageSize, pageNumber, after }) {
     commit('setLoading', true)
     // const index = `${process.env.VUE_APP_PLACE_INDEX}`
     const maxPageSize: number = process.env.VUE_APP_PLACE_INDEX_PAGE_SIZE

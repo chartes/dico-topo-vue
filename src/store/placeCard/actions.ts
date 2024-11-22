@@ -38,7 +38,7 @@ export const actions: ActionTree<PlaceCardState, RootState> = {
   clearPlaceCard ({ commit }) {
     commit('clearAll')
   },
-  async fetchPlaceCard ({ commit, rootState }, id: any) {
+  async fetchPlaceCard ({ commit }, id: any) {
     commit('setLoading', true)
 
     const response = await api.get(`/places/${id}?without-relationships&include=responsibility@flat-resp,linked-places@lp,old-labels@flat-old-label,descriptions@flat-place-desc,comments@flat-place-comment`)

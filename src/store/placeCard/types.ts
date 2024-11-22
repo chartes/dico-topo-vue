@@ -1,5 +1,4 @@
 // types.ts
-import { Links, Meta } from '@/store/types'
 import { Place } from '@/store/places/types'
 
 export interface PlaceOldLabel {

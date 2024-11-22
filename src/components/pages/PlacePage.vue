@@ -252,7 +252,6 @@
 import { mapState, mapActions, mapGetters } from 'vuex'
 import DefaultLayout from '../DefaultLayout'
 import { cleanStr } from '../../utils/helpers'
-import PlaceCard from '../PlaceCard'
 import MiradorViewer from '../MiradorViewer'
 
 export default {

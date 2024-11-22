@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import MainToolbar from '../ui/MainToolbar'
 import DefaultLayout from '../DefaultLayout'
 
 export default {

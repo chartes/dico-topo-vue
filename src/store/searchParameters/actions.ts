@@ -1,66 +1,65 @@
 import { ActionTree } from 'vuex'
-import { QueryState, SortableField } from './types'
+import { QueryState } from './types'
 import { RootState } from '../types'
 import * as _ from 'lodash'
-import { getters } from './getters'
 
 export const actions: ActionTree<QueryState, RootState> = {
-  setTerm ({ commit, state, rootState }, t): any {
+  setTerm ({ commit }, t): any {
     commit('setTerm', t)
   },
-  setGroupbyPlace ({ commit, state, rootState }, t): any {
+  setGroupbyPlace ({ commit }, t): any {
     commit('setGroupbyPlace', t)
   },
-  setRange ({ commit, state }, { key, operators }): any {
+  setRange ({ commit }, { key, operators }): any {
     commit('setRange', { key, operators })
   },
-  setFuzziness ({ commit, state }, value): any {
+  setFuzziness ({ commit }, value): any {
     commit('setFuzziness', value)
   },
-  removeRange ({ commit, state }): any {
+  removeRange ({ commit }): any {
     commit('removeRange')
   },
-  setPagination ({ commit, state, rootState }, t): any {
+  setPagination ({ commit }, t): any {
     commit('setPagination', t)
   },
-  setTableFullscreen ({ commit, state, rootState }, t): any {
+  setTableFullscreen ({ commit }, t): any {
     commit('setTableFullscreen', t)
   },
-  setTableMinimized ({ commit, state, rootState }, t): any {
+  setTableMinimized ({ commit }, t): any {
     commit('setTableMinimized', t)
   },
-  saveZoom ({ commit, state, rootState }, { zoom, center }): any {
+  saveZoom ({ commit }, { zoom, center }): any {
     commit('saveZoom', { zoom, center })
   },
-  addSortField ({ commit, state, rootState }, { field, order }): any {
+  addSortField ({ commit }, { field, order }): any {
     commit('addSortField', { field, order })
   },
-  updateSortField ({ commit, state, rootState }, { field, order }): any {
+  updateSortField ({ commit }, { field, order }): any {
     commit('updateSortField', { field, order })
   },
-  removeSortField ({ commit, state, rootState }, field): any {
+  removeSortField ({ commit }, field): any {
     commit('removeSortField', field)
   },
-  setCtnFilter ({ commit, state, rootState }, value): any {
+  setCtnFilter ({ commit }, value): any {
     commit('setCtnFilter', value)
   },
-  setDepFilter ({ commit, state, rootState }, value): any {
+  setDepFilter ({ commit }, value): any {
     commit('setDepFilter', value)
   },
   toggleIIIFViewerVisibility ({ commit }) : any {
     commit('toggleIIIFViewer')
   },
-  setIIIFViewerVisibility ({ commit, state }, t) : any {
+  setIIIFViewerVisibility ({ commit }, t) : any {
     commit('setIIIFViewer', t)
   },
-  searchCallback: ({ commit, state, rootState, getters, dispatch }) => {
+  searchCallback: ({ dispatch }) => {
     console.log('fullsearch')
     // start the search from here
     dispatch('fetchMapResults')
     dispatch('fetchUniqueLists')
     dispatch('fetchTableResults')
   },
-  fetchUniqueLists: _.debounce(async ({ state, getters, dispatch }: any) => {
+  fetchUniqueLists: _.debounce(async ({ getters, dispatch }: any) => {
     dispatch('places/fetchUniqueLists', {
       query: getters.query
     },

@@ -204,7 +204,7 @@ export default {
       const upperBound = this.knownYears[this.knownYears.length - 1].year
 
       return {
-        labels: this.knownYears.map(y => ''),
+        labels: this.knownYears.map(() => ''),
         datasets: [
           {
             backgroundColor: '#d32f2f',

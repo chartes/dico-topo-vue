@@ -220,7 +220,6 @@ export default {
       const currentTarget = $event.currentTarget
       const cardElement = document.getElementById('place-card')
       if (cardElement && currentTarget.type === 'button') {
-        const cardElementScrollHeight = cardElement.scrollHeight
         if (this.toggleExpansionPanelTimeout) clearTimeout(this.toggleExpansionPanelTimeout)
         this.toggleExpansionPanelTimeout = setTimeout(function () {
           const scrollAmount = currentTarget.getBoundingClientRect().top - cardElement.getBoundingClientRect().top

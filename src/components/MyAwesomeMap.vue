@@ -11,7 +11,7 @@
 <script>
 import { mapState } from 'vuex'
 import { LMap } from 'vue2-leaflet'
-import * as Gp from 'geoportal-extensions-leaflet'
+import 'geoportal-extensions-leaflet'
 
 import 'leaflet/dist/leaflet.css'
 
@@ -79,7 +79,7 @@ export default {
   created () {
     L.Marker.prototype.options.icon = idleIcon
   },
-  beforeRouteUpdate (to, from, next) {
+  beforeRouteUpdate (_to, _from, next) {
     this.init()
     next()
   },
@@ -403,7 +403,7 @@ export default {
     mapmarkerItems () {
       this.setMarkers(this.mapmarkerItems)
     },
-    mapmarkerLoading (val) {
+    mapmarkerLoading () {
       if (this.mapmarkerLoading) {
         this.clearMarkers()
       }

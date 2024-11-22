@@ -40,7 +40,7 @@ export const mutations: MutationTree<PlaceState> = {
       state.afterHistory.push(state.meta.after)
     }
   },
-  popAfterHistory (state: PlaceState, meta) {
+  popAfterHistory (state: PlaceState) {
     if (state.afterHistory.length > 0) {
       state.afterHistory.pop()
     }

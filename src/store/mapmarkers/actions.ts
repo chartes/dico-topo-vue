@@ -15,7 +15,7 @@ export const actions: ActionTree<MapMarkerState, RootState> = {
     commit('clearAll')
     commit('setLoading', false)
   },
-  searchMapMarker ({ commit, rootState, state }, { query, filterParam, rangeParam, pageSize, pageNumber, nextLink }): any {
+  searchMapMarker ({ commit, state }, { query, filterParam, rangeParam, pageSize, pageNumber, nextLink }): any {
     let url: any = null
 
     if (nextLink) {

@@ -13,8 +13,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters, mapState } from 'vuex'
-import Vue from 'vue'
+import { mapActions, mapState } from 'vuex'
 
 export default {
   name: 'FuzzinessWidget',

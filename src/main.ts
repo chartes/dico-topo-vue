@@ -1,6 +1,5 @@
 /* eslint-disable no-new */
 import Vue from 'vue'
-import '@/plugins/highlight'
 
 import store from './store/index'
 

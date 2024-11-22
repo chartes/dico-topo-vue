@@ -3,11 +3,10 @@
 </template><!-- v-show="viewer -->
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapActions } from 'vuex'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-import Mirador from 'mirador'
 import MiradorApp from 'mirador/dist/es/src/components/App'
 import createPluggableStore from 'mirador/dist/es/src/state/createPluggableStore'
 

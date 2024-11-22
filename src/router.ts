@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueRouter, { Location, Route, RouteConfig } from 'vue-router'
+import VueRouter, { RouteConfig } from 'vue-router'
 
 const LandingPage = () => import(/* webpackChunkName: "primary-pages" */ '@/components/pages/LandingPage.vue')
 const HomePage = () => import(/* webpackChunkName: "primary-pages" */ '@/components/pages/HomePage.vue')
@@ -59,7 +59,7 @@ export const createRouter = () => new VueRouter({
   base: rootUrl,
   mode: 'history',
   routes: createRoutes(),
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior () {
     return { x: 0, y: 0 }
   }
 })

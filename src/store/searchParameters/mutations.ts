@@ -1,6 +1,6 @@
 import { MutationTree } from 'vuex'
 import Vue from 'vue'
-import { QueryState, SortableField, RangeParameter } from '@/store/searchParameters/types'
+import { QueryState, RangeParameter } from '@/store/searchParameters/types'
 
 export function getDefaultState (): QueryState {
   return {

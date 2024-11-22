@@ -199,7 +199,6 @@ import FilterResult from './ui/FilterResult'
 
 import { cleanStr } from '../utils/helpers'
 
-import Vue from 'vue'
 import _ from 'lodash'
 
 export default {

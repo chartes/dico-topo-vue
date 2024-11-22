@@ -46,7 +46,7 @@ export default {
       // Append the group that will contain our paths
       const deps = svg.append('g')
 
-      const features = deps
+      deps
         .selectAll('path')
         .data(this.departments.features)
         .enter()
@@ -92,16 +92,16 @@ export default {
         ])
         .range([0, 9 * 20])
 
-      const legendAxis = svg.append('g')
+      svg.append('g')
         .attr('transform', 'translate(550, 150)')
         .call(d3.axisRight(legendScale).ticks())
 
-      this.places.forEach(function (e, i) {
+      this.places.forEach(function (e) {
         d3.select('#d' + e.CODE_DEPT)
-          .attr('class', function (d) {
+          .attr('class', function () {
             return 'department q' + quantile(+e.NB_PLACES) + '-9'
           })
-          .on('mouseover', function (d) {
+          .on('mouseover', function () {
             div.transition()
               .duration(200)
               .style('opacity', 0.9)
@@ -111,7 +111,7 @@ export default {
               .style('left', (d3.event.pageX + 30) + 'px')
               .style('top', (d3.event.pageY - 30) + 'px')
           })
-          .on('mouseout', function (d) {
+          .on('mouseout', function () {
             div.style('opacity', 0)
             div.html('')
               .style('left', '-500px')
