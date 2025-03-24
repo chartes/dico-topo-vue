@@ -106,7 +106,7 @@ export default {
       })
 
       this.map.addLayer(this.OSMLayer)
-      // this.map.addLayer(this.CASSINILayer)
+      this.map.addLayer(this.CASSINILayer)
       this.map.addLayer(this.EtatMajorIGNLayer)
       this.map.addLayer(this.ParcellesCadastrales20082013IGNLayer)
       this.map.addLayer(this.TopoIGNLayer)
@@ -324,20 +324,21 @@ export default {
         minZoom: 6,
         maxZoom: 20
       })
-    }, // ignApiKey: 'parcellaire',
+    },
     CASSINILayer () {
-      return L.tileLayer('https://wxs.ign.fr/{ignApiKey}/geoportail/wmts?' +
+      return L.tileLayer('https://data.geopf.fr/wmts?' +
             '&REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&TILEMATRIXSET=PM' +
             '&LAYER={ignLayer}&STYLE={style}&FORMAT={format}' +
             '&TILECOL={x}&TILEROW={y}&TILEMATRIX={z}',
       {
-        ignApiKey: process.env.VUE_APP_IGN_CASSINI_API_KEY,
-        ignLayer: 'GEOGRAPHICALGRIDSYSTEMS.CASSINI',
+        ignLayer: 'BNF-IGNF_GEOGRAPHICALGRIDSYSTEMS.CASSINI',
         style: 'normal',
-        format: 'image/jpeg',
+        format: 'image/png',
         service: 'WMTS',
         opacity: 1,
-        pane: 'IGN'
+        pane: 'IGN',
+        minZoom: 6,
+        maxZoom: 14
       })
     },
 
@@ -350,13 +351,13 @@ export default {
             description: 'Couche Open Street Maps'
           }
         },
-        /* {
+        {
           layer: this.CASSINILayer,
           config: {
             title: 'Carte de Cassini',
             description: 'Fond de carte Cassini'
           }
-        }, */
+        },
         {
           layer: this.ParcellesCadastrales20082013IGNLayer,
           config: {
