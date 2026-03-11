@@ -16,6 +16,14 @@
     "NB_PLACENAMES": 19167
   },
   {
+    "CODE_REG": 83,
+    "NOM_REGION": "Auvergne",
+    "CODE_DEPT": "03",
+    "NOM_DEPT": "Allier",
+    "NB_PLACES": 13268,
+    "NB_PLACENAMES": 13749
+  },
+  {
     "CODE_REG": 93,
     "NOM_REGION": "Provence-Alpes-Côte d'Azur",
     "CODE_DEPT": "05",
@@ -198,6 +206,14 @@
     "NOM_DEPT": "Haute-Marne",
     "NB_PLACES": 4139,
     "NB_PLACENAMES": 11923
+  },
+  {
+    "CODE_REG": 52,
+    "NOM_REGION": "Pays de la Loire",
+    "CODE_DEPT": 53,
+    "NOM_DEPT": "Mayenne",
+    "NB_PLACES": 25039,
+    "NB_PLACENAMES": 27679
   },
   {
     "CODE_REG": 41,

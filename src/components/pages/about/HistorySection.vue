@@ -29,6 +29,7 @@
       <p>Les références précédées d’un <code>*</code> sont actuellement interrogeables dans l’application, celles précédées d’un <code>#</code> sont en cours de traitement.</p>
       <p>01* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k367437" target="_blank"><span class="sc">Philipon</span> (Édouard), <cite>Dictionnaire topographique du département de l’Ain</cite>, Paris, 1911</a>.</p>
       <p>02* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k39289w" target="_blank"><span class="sc">Matton</span> (Auguste), <cite>Dictionnaire topographique du département de l’Aisne</cite>, Paris, 1871</a>.</p>
+      <p>03* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k5817623f" target="_blank"><span class="sc">Chazaud</span> (Martial-Alphonse), <cite>Dictionnaire des noms de lieux habités du département de l'Allier</cite>, Moulins, 1881</a>.</p>
       <p>05* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k392903" target="_blank"><span class="sc">Roman</span> (Joseph), <cite>Dictionnaire topographique du département des Hautes-Alpes</cite>, Paris, 1884</a>.</p>
       <p>06 <span class="sc">Casado</span> (Pierre), <cite>Répertoire des noms de lieux du département des Alpes-Maritimes de l’époque contemporaine (<span class="sc">xx</span><sup>e</sup> siècle)</cite>, Viols-le-Fort, 2020-2021, 2 t.</p>
       <!-- <p>06 <span class="sc">Tisserand</span> (Eugène), <cite>Dictionnaire topographique des Alpes-Maritimes</cite>, ms., <span class="sc">xix</span><sup>e</sup>&nbsp;s. (Arch. nat., F<sup>17</sup> 3299).</p> -->
@@ -64,7 +65,7 @@
       <p>50 <span class="sc">Delisle</span> (Léopold), <cite>Dictionnaire topographique de la Manche</cite>, ms., vers 1860 (BNF, nouv. acq. fr. 21846).</p>
       <p>51* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k39298v" target="_blank"><span class="sc">Longnon</span> (Auguste), <cite>Dictionnaire topographique du département de la Marne</cite>, Paris, 1891</a>.</p>
       <p>52* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k39297h" target="_blank"><span class="sc">Roserot</span> (Alphonse), <cite>Dictionnaire topographique du département de la Haute-Marne</cite>, Paris, 1903</a>.</p>
-      <p>53# <a href="https://gallica.bnf.fr/ark:/12148/bpt6k204189z" target="_blank"><span class="sc">Maître</span> (Léon), <cite>Dictionnaire topographique du departement de la Mayenne</cite>, Paris, 1878</a>.</p>
+      <p>53* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k204189z" target="_blank"><span class="sc">Maître</span> (Léon), <cite>Dictionnaire topographique du departement de la Mayenne</cite>, Paris, 1878</a>.</p>
       <p>54* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k96349681" target="_blank"><span class="sc">Lepage</span> (Henri), <cite>Dictionnaire topographique du département de la Meurthe</cite>, Paris, 1862</a>.</p>
       <p>55* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k392996" target="_blank"><span class="sc">Liénard</span> (Félix), <cite>Dictionnaire topographique du département de la Meuse</cite>, Paris, 1872</a>.</p>
       <p>56* <a href="https://gallica.bnf.fr/ark:/12148/bpt6k39300k" target="_blank"><span class="sc">Rosenzweig</span> (Louis), <cite>Dictionnaire topographique du département du Morbihan</cite>, Paris, 1870</a>.</p>
