@@ -5,7 +5,7 @@
           <img src="@/assets/logo-an-couleur.png" height="60" alt="Logo Archives Nationales"/>
         </a>
       <a href="https://www.chartes.psl.eu/" target="_blank">
-        <img src="../../assets/logo-enc-couleur.png" height="60" alt="Logo École nationale des chartes" />
+        <img src="../../assets/logo-enc-couleur.svg" height="60" alt="Logo École nationale des chartes" />
       </a>
       <a href="https://cths.fr/" target="_blank">
         <img src="../../assets/logo-cths-couleur.png" height="60" alt="Logo CTHS"/>
