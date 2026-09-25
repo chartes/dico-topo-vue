@@ -64,6 +64,15 @@ cd dist/
 python3 -m http.server
 ```
 
+### Matomo tracking configuration
+
+Matomo tracking is optional and driven by two environment variables (set them in the `.env.*` files or in the deployment environment):
+
+- `VUE_APP_MATOMO_URL` — the Matomo instance base URL (e.g. `https://matomo.example.com/matomo`)
+- `VUE_APP_MATOMO_SITE_ID` — the Matomo site ID
+
+Tracking is enabled only when **both** variables are set and non-empty. When enabled, page views are tracked automatically on every router navigation and link tracking is active. When they are empty (or absent), the Matomo plugin is not loaded at all, so development builds are not tracked by default.
+
 ### Lints and fixes files
 ```
 yarn lint
